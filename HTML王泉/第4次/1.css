@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+    /* 段落首行缩进2个字符 */
+}
+
+#two {
+    color: red;
+}
+
+div {
+    margin: 0 auto;
+    /* 只能margin 0 auto才能居中 */
+    /* text-align: center; */
+    height: 500px;
+    width: 500px;
+}

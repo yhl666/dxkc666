@@ -1,0 +1,17 @@
+p,
+#two {
+    /* p 选择器选择所有 p 标签，
+    而 #two 选择器选择 id 为 two 的元素。 */
+    color: red;
+}
+
+h4#one,
+p {
+    /* 选择器是 CSS 中的并列选择器。
+    并列选择器允许您同时选择多个元素，
+    但它们必须是不同的元素。
+    在本例中 h4#one 选择器选择 id 为 one 的 h4 标签，
+    而 p 选择器选择所有 p 标签 */
+    text-decoration: underline;
+    /* h4#one 和所有 p 标签的文字添加下划线 */
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*（1）先使用*{padding:0;margin:0}清除浏览器自带边距样式。*/
+        
+        * {
+            padding: 0;
+            margin: 0
+        }
+        /* （2）设置基本文本样式：颜色为#333，大小为14px。 */
+        
+        body {
+            font-size: 14px;
+            color: #333;
+        }
+        /* （3）设置超链接文字颜色为#333，并取消超链接的下划线。 */
+        
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        /* （4）设置总体盒子的宽度和居中效果，其中：width:640px;margin:10px auto。 */
+        
+        .main {
+            width: 640px;
+            margin: 10px auto;
+        }
+        /* (5）鼠标经过新闻区域时，背景颜色变成#fafafa。 */
+        
+        .main:hover {
+            background-color: #fafafa;
+        }
+        /* （6）鼠标经过标题、正文、[详细]等部分的时候，文本变成红色。 */
+        
+        .main a:hover {
+            /* 这是个后代选择器，
+            .main类下的所有a超链接元素 */
+            color: red;
+            /* 鼠标悬停时的文本颜色 */
+        }
+        /* （7）设置标题字体大小为20px，标题下方外间距20px。 */
+        
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            /* 设置下边距为 20 像素 */
+        }
+        /* （8）设置正文与下方评论部分间距为12px。 */
+        
+        .content {
+            margin-bottom: 20px;
+            /* 设置下边距为 20 像素 */
+        }
+        /* （9）评论部分，设置时间与"福雷"的间距为25px。 */
+        
+        .gray span {
+            /* .gray 类内所有的 <span> 元素 */
+            margin-right: 25px;
+            /* 右边距设置25px */
+        }
+        /* （10）设置"福雷"与"多哥"的间距为10px。 */
+        /* .gray a:not(:last-child) {
+            margin-right: 10px;
+            /* .gray 类内的所有链接元素<a>
+                但不包括最后一个链接元素
+                然后在它们之间添加了 10 像素的右边距 */
+        
+        .gray a {
+            margin-right: 10px;
+            /* 右边距设置10px */
+        }
+        
+        .gray a:last-child {
+            /* .gray所有a元素 */
+            /* :last-child：这是一个伪类选择器
+            用于选择某个父元素的最后一个子元素。 */
+            /* :last-child：就是.gray 类所包含的a链接元素中的最后一个 */
+            margin-right: 0;
+        }
+        /* （11）设置.gray部分文字颜色为#999。 */
+        
+        .gray,
+        .gray a {
+            /* .gray,并集 .gray的后代a*/
+            color: #999;
+        }
+        /* （12）设置"评论"右浮动，方法为：float:right。 */
+        
+        .pinglun {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2><a href="">现任总统福雷再次当选多哥总统 外交部:热烈祝贺</a></h2>
+        <div class="content">
+            <a>原标题：现任总统福雷再次当选多哥总统外交部：热烈祝贺
+                [环球时报环球网报道记者张卉]2020年3月4日，外交部发言人赵立坚主持召开例行记者会，部分实录如下。</a>
+            <a>[详细]</a>
+        </div>
+        <div class="gray">
+            <span>16分钟前</span>
+            <a href="">福雷</a>
+            <a href="">多哥</a>
+            <a href="" class="pinglun">评论</a>
+        </div>
+    </div>
+</body>
+
+</html>

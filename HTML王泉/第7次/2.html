@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* （1）清除所有元素的内外边距。 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* （2）设置文本字体16px，颜色#3b3b3b，并继承。 */
+        
+        div {
+            font-size: 16px;
+            color: #ee5af6;
+        }
+        /* （3）设置超链接颜色和文本颜色一样，为#3b3b3b，并无下划线。 */
+        
+        a {
+            /* color: rgb(212, 69, 216); */
+            color: #ee5af6;
+            text-decoration: none;
+            /* 去掉a标签的下划线 */
+        }
+        /* （4）设置.pic类的宽度为436px，使用margin属性让盒子居中显示。 */
+        
+        .pic {
+            width: 436px;
+            /* 设置.pic类的宽度为436px */
+            margin: 0 auto;
+            /* 使用margin属性让盒子居中显示 */
+        }
+        /* （5）设置图片的宽度为436px，高度为240px，类型设置成块元素。 */
+        
+        img {
+            width: 436px;
+            height: 240px;
+            display: block;
+            /* 设置图片为块级元素 */
+            margin: 0;
+            /* 清除图片的默认外边距 */
+        }
+        /* （6）pic类中的div部分，设置内填充20px，背景颜色为浅灰#f3f3f3。 */
+        
+        .pic div {
+            padding: 20px;
+            background-color: red;
+        }
+        /* （7）将pic类中的span和a标签设置为块元素。 */
+        
+        a,
+        span {
+            display: block;
+            /* 设置为块级元素 */
+        }
+        /* （8）设置超链接的下边距为10px。 */
+        
+        a {
+            margin-bottom: 10px;
+            /* 下边距10px */
+        }
+        /* （9）设置鼠标放上时，div改变背景颜色为蓝色，文字颜色为白色。 */
+        
+        .pic:hover div {
+            background-color: blue;
+            color: white;
+            /* .pic的伪类效果给.pic的子元素div */
+        }
+        /* （10）设置鼠标放上时，超链接颜色变为白色。 */
+        
+        .pic:hover div a {
+            color: white;
+            /* .pic的伪类效果给.pic的子元素div,子元素div再给它的子元素a */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pic">
+
+        <img src="dx.png" alt="">
+
+        <div>
+
+            <a href="">我校举办2021年春季校园招聘会</a>
+
+            <span>2021-03-29</span>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

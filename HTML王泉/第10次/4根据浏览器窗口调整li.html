@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 前面的样式保持不变 */
+        /* 新增媒体查询 */
+        /* 重置默认样式 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 移除列表样式 */
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        /* 设置页面基本样式 */
+        
+        body {
+            color: #333;
+            /* 字体颜色为深灰色 */
+            font-size: 14px;
+            /* 字体大小为 14 像素 */
+        }
+        /* 容器样式 */
+        
+        .container {
+            width: 1200px;
+            /* 宽度为 1200 像素 */
+            height: 400px;
+            /* 高度为 400 像素 */
+        }
+        /* 容器内标题样式 */
+        
+        .container h3 {
+            font-size: 26px;
+            /* 字体大小为 26 像素 */
+        }
+        /* 容器内标题中的小字样式 */
+        
+        .container h3 span {
+            font-size: 14px;
+            /* 字体大小为 14 像素 */
+            color: #333;
+            /* 字体颜色为深灰色 */
+        }
+        /* 容器内列表样式 */
+        
+        .container ul {
+            display: flex;
+            /* 使用弹性盒子布局 */
+            margin-top: 20px;
+            /* 顶部外边距为 20 像素 */
+        }
+        /* 列表项样式 */
+        
+        .container ul li {
+            flex: 1;
+            /* 弹性盒子的扩展比率为 1 */
+            margin-right: 10px;
+            /* 右侧外边距为 10 像素 */
+        }
+        /* 列表项内图片样式 */
+        
+        .container ul li img {
+            width: 100%;
+            /* 宽度占满父容器 */
+            height: auto;
+            /* 高度自适应 */
+        }
+        /* 列表项内标题样式 */
+        
+        .container ul li h4 {
+            font-style: 16px;
+            /* 字体样式为 16 像素 */
+            margin-top: 5px;
+            /* 顶部外边距为 5 像素 */
+            margin-bottom: 5px;
+            /* 底部外边距为 5 像素 */
+            display: inline-block;
+            /* 内联块元素显示 */
+        }
+        /* 列表项内评分样式 */
+        
+        .container ul li span {
+            color: red;
+            /* 字体颜色为红色 */
+            float: right;
+            /* 右浮动 */
+        }
+        /* 容器使用弹性盒子布局 */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /* 自动换行 */
+        }
+        /* 列表项内包裹内容的样式 */
+        
+        .container ul li .item {
+            flex: 1 1 auto;
+            /* 弹性盒子的基本大小为 auto */
+            margin: 10px;
+            /* 外边距为 10 像素 */
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container ul {
+                flex-direction: column;
+                /* 将 li 元素垂直排列 */
+            }
+            .container ul li {
+                width: 100%;
+                /* 每个 li 元素占满整行 */
+                margin-bottom: 20px;
+                /* 增加元素间的间距 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 这里保持原来的 HTML 结构不变 -->
+        <h3>同步热播
+            <span>更多></span>
+        </h3>
+        <ul>
+            <li class="item">
+                <img src="top2.jpg" alt="">
+                <h4>赵晓彤</h4>
+                <span>9.9</span>
+                <p>微信好友颜值top2</p>
+            </li>
+            <li class="item">
+                <img src="top2.jpg" alt="">
+                <h4>赵晓彤</h4>
+                <span>9.9</span>
+                <p>微信好友颜值top2</p>
+            </li>
+            <li>
+                <img src="top2.jpg" alt="">
+                <h4>赵晓彤</h4>
+                <span>9.9</span>
+                <p>微信好友颜值top2</p>
+            </li>
+            <li>
+                <img src="top2.jpg" alt="">
+                <h4>赵晓彤</h4>
+                <span>9.9</span>
+                <p>微信好友颜值top2</p>
+            </li>
+            <li>
+                <img src="top2.jpg" alt="">
+                <h4>赵晓彤</h4>
+                <span>9.9</span>
+                <p>微信好友颜值top2</p>
+            </li>
+            <li>
+                <img src="top2.jpg" alt="">
+                <h4>赵晓彤</h4>
+                <span>9.9</span>
+                <p>微信好友颜值top2</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

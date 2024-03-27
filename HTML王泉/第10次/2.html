@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        body {
+            color: aqua;
+            font-size: 14px;
+        }
+        
+        .con {
+            width: 1200px;
+            height: 400px;
+            margin: 200px auto;
+            /*让内容居中 */
+        }
+        
+        .con h3 {
+            font-size: 26px;
+        }
+        
+        .con h3 span {
+            font-size: 14px;
+            color: blue;
+        }
+        
+        .con ul {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .con ul li {
+            flex: 1;
+            margin-right: 10px;
+            /* 让图片中间隔10px */
+        }
+        
+        .con ul li img {
+            width: 100px;
+            /* 所有图片的宽度撑满父元素 */
+            height: auto;
+            /* 根据父元素自动设置宽度 */
+        }
+        
+        .con ul li h4 {
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        /* .con ul li span {
+            font-size: 14px;
+            整个body都是14px，无须设置
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <h3>同步热播<span>更多</span></h3>
+
+        <ul>
+
+            <li class="im">
+                <img src="top2.jpg">
+
+                <h4>赵晓彤</h4>
+                <span class="pf">8.8</span>
+                <p>仙桃市大学生颜值top1</p>
+            </li>
+            <li class="im"> <img src="top2.jpg">
+                <h4>赵晓彤</h4>
+                <span>仙桃市大学生颜值top1</span></li>
+            <li class="im"> <img src="top2.jpg">
+                <h4>赵晓彤</h4>
+                <span>仙桃市大学生颜值top1</span></li>
+            <li class="im"> <img src="top2.jpg">
+                <h4>赵晓彤</h4>
+                <span>仙桃市大学生颜值top1</span></li>
+            <li class="im"> <img src="top2.jpg">
+                <h4>赵晓彤n></h4>
+                <span>仙桃市大学生颜值top1</span></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

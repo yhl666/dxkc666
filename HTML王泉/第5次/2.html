@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            float: left;
+            width: 100px;
+        }
+        
+        h1 {
+            text-decoration: underline;
+            font-size: 20px;
+            /* 修正这里的拼写错误 */
+            color: red;
+            /* 将颜色属性移到这里 */
+        }
+        /* span {
+            color: blue;
+              取消默认样式
+        }
+         */
+        
+        .a {
+            color: blue;
+        }
+        /* 鼠标悬停在 h1 或者 h1 内部的 .a 上时的样式 */
+        
+        h1:hover,
+        h1:hover .a {
+            /* 并集选择器，后代集选择器  h1的后代.a */
+            color: rgb(17, 237, 83);
+            /* 鼠标悬停时的颜色 */
+            text-decoration: none;
+            /* 悬停时去除下划线效果 */
+        }
+        
+        .green {
+            color: darkgreen;
+        }
+        
+        .gray {
+            color: rgb(133, 132, 130);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1><span>新浪</span><span class="a">博客首页——</span><span>新浪网</span></h1>
+        <img src="微博.png" alt="">
+        <p><span>新浪网</span>博客频道是全中国最主流，最具人气的博客频道。拥有最耀眼的娱乐明星博客、最知性的名人博客、最动人的情感博客、最自我的草根博客。</p>
+        <span class="green">blog.sina.com.cn/2018-07-07</span>
+        <span class="gray">-百度快照-评价</span>
+    </div>
+</body>
+
+</html>
