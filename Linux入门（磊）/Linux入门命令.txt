@@ -1,0 +1,118 @@
+    1.基础命令
+	[root@192 ~]yum install -y update	//更新Linux的yum源
+
+	[root@192 ~]# ifconfig	//查看本机ip地址
+
+	[root@192 ~]# ls		//显示当前目录下的类容
+
+	[root@192 ~]# cd /		//进入根目录
+
+	[root@192 ~]# pwd	 //查看目前所在的工作目录的绝对路径
+
+    2.vim编辑器命令
+	[root@192 ~]#：wq	//保存并退出 Vim 编辑器
+	[root@192 ~]#：:wq!	//保存并强制退出 Vim 编辑器
+	[root@192 ~]#：:q		//不保存就退出 Vim 编辑器
+	[root@192 ~]#：:q!		//不保存，且强制退出 Vim 编辑器
+	[root@192 ~]#：:w		//保存但是不退出 Vim 编辑器
+	[root@192 ~]#：:w!	//强制保存文本
+	[root@192 ~]#：:w filename  //另存到 filename 文件
+	[root@192 ~]#：x!		//保存文本，并退出 Vim 编辑器
+	[root@192 ~]#：zz		//直接退出 Vim 编辑器
+
+     4.文件与文件夹创建/vi编辑文件
+	[root@192 ~]#mkdir 666	//创建666文件夹
+	[root@192 ~]#touch 888	//创建888文件
+	[root@localhost 666]# gzip 6.txt       //压缩6.txt文件
+	[root@localhost 666]# gunzip 1        //解压1
+	[root@localhost 666]# rm -f 6.txt      //强制删除6.txt文件    参数：  -f 强制删除 -v 询问删除  -r 将参数中列出的全部目录和子目录都递归地删除
+
+
+	
+	
+	1.[root@192 ~]#vi 888	//编辑888文件
+	2.~           //按 i  进入编辑模式
+	   ~
+	   ~内容随便打
+	   ~
+	   ~
+	   ~
+	3.按ESC退出编辑模式
+
+	4. :wq  保存退出
+
+	
+
+	[root@192 ~]#cat 888	//查看888内容
+	
+      5.Linux安装.deb软件包
+	1.yhl@yhl:~/下载$ dpkg -i linuxqq_2.0.0-b2-1089_amd64.deb  
+
+  		//	　1. 安装
+     		//	        dpkg –i deb软件包名
+　 		//	 如： dpkg –i QQ-1.1.1.deb
+
+
+ 		//	    2. 卸载
+　　      		//	         dpkg –e 软件名
+　　		//	  如：dpkg –e QQ1.1.1
+                                                  或   dpkg -r linuxqq
+
+		//或者：            dpkg --list        <这是查看所用安装的软件
+		//	         sudo apt-get --purge remove wechat-linux-spark   <删除微信
+
+       6.rpm命令
+
+	1）RPM安装命令：
+
+	格式：rpm -ivh 软件包名（全名）
+
+	        -i       install的意思，就是安装软件。也可以使用--install
+
+	        -v       显示安装过程中的详细信息。
+
+	        -h       以#号显示安装的进度。
+
+	2）卸载命令：
+
+	格式：rpm -e 软件名（不用指定包全名）
+
+	3）升级命令：
+
+	格式：rpm -Uvh 软件包全名
+
+	        -U     升级安装，若没安装则直接安装，若安装有旧版本，则升级安装。
+
+	        -F     升级安装，若没安装，则不安装，必须有旧版本才进行升级安装。
+
+	4）查询已安装的软件信息：
+
+	格式：rpm -q 包名      查询包是否安装
+
+	        rpm -qa                查看系统中已安装的所有RPM软件包列表
+
+	        rpm -qi 包名           查看指定软件所安装的信息。
+
+	        rpm -ql 包名           查看指定软件所安装目录，文件列表
+
+
+	7）例RPM包安装过程：
+
+	rpm  -ivh  /mnt/Packages/tree-1.6.0-10.e17.x86_64.rpm
+
+	卸载：rpm  -e  tree
+
+         //如果安装不了
+	1.  apt-get install alien                  //安装alien
+		或者alien -i wps2019.rpm    //如果安装不了↓↓↓
+	2.  apt-get install fakeroot            //安装fakeroot
+    	3.  fakeroot alien wps2019.rpm       //把.rpm包转换成.deb包
+	4.  dpkg -i wps2019.deb                 //安装wps2019.deb
+      
+      7.find查找命令
+	1.按文件名
+	find 路径 -name "文件名"
+
+	2.例：查找/home目录下的所有以.c为后缀的文件
+	find /home -name "*.c"
+         

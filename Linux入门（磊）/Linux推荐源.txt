@@ -1,0 +1,11 @@
+sudo vim /etc/apt/sources.list
+
+
+deb http://mirrors.ustc.edu.cn/debian/ stretch main non-free contrib
+deb http://mirrors.ustc.edu.cn/debian/ stretch-updates main non-free contrib
+deb http://mirrors.ustc.edu.cn/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/debian/ stretch main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/debian/ stretch-backports main non-free contrib
+deb http://mirrors.ustc.edu.cn/debian-security/ stretch/updates main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/debian-security/ stretch/updates main non-free contrib

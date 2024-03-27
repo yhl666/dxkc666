@@ -1,0 +1,18 @@
+轻松通过 docker 部署 linux-command 网站。
+
+   第1步
+   [root@localhost]:docker pull wcjiang/linux-command
+# 或者
+   [root@localhost]:docker pull ghcr.io/jaywcjlove/linux-command:latest
+
+
+   第2步
+[root@localhost]:docker run --name linux-command --rm -d -p 9665:3000 wcjiang/linux-command:latest
+# 或者
+[root@localhost]:docker run --name linux-command -itd -p 9665:3000 wcjiang/linux-command:latest
+# 或者
+[root@localhost]:docker run --name linux-command -itd -p 9665:3000 ghcr.io/jaywcjlove/linux-command:latest
+在浏览器中访问以下 URL
+
+   第3步
+http://localhost:9665/
